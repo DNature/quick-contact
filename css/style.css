@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    padding-bottom: 5rem;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-secondary{
+    color: #ff7b00;
+}
+
+.heading{
+    margin: 3rem;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.heading h1{
+    font-size: 2.5rem;
+}
+.heading p{
+    font-size: 1.1rem;
+}
+
+.btn{
+    padding: .8rem 1.7rem;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: opacity 0.5s ease-out;
+    border-radius: 5px;
+}
+.btn:hover{
+    opacity: 0.7;
+    box-shadow: 0 10px 30px #000;
+}
+.btn-primary{
+    background: #0051ff;
+}
+.btn-secondary{
+    background: #ff7b00;
+}
+
+.form-container{
+    background: rgba(255,255,255, 0.5);
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease-in-out;
+}
+.form-container:hover{
+    box-shadow: 0 4px 35px rgba(0,0,0,0.4);
+
+}
+
+.images{
+    flex: 5;
+}
+.form-details{
+    flex: 7;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    padding: 2rem 0;
+    background: #008cff9c;
+    margin: 0;
+}
+
+.input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    border-bottom: 2px solid #ff7b00;
+    margin: 0.5rem 0;
+    padding: .8rem;
+    font-size: 1.3rem;
+}
+
+.textarea{
+    padding: .8rem;
+    font-size: 1.3rem;
+    border: none;
+    outline: 0;
+    max-width: 300px;
+    width: 300px;
+    height: 100px;
+    resize: none;
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* Medium and small screens */
+@media screen and (max-width: 680px){
+    .form-container{
+        flex-direction: column;
+    }
+    .svg1{
+        display: none;
+    }
+
+    .input, .textarea{
+        font-size: 1rem;
+    }
+    .heading p{
+        font-size: 1rem;
+    }
+    .text-secondary, .heading h1{
+        font-size: 2rem;
+    }
+    .textarea{
+        max-width: 250px;
+    }
+
+}
